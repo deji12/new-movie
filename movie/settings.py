@@ -30,6 +30,7 @@ SECRET_KEY = 'django-insecure-2ns(12mi_0-i^lq8z9&*$u90lqt9#x6k*z(*o-kl*izfq7yl)y
 DEBUG = True
 
 ALLOWED_HOSTS = ['https://new-movie-production.up.railway.app/', '*']
+CSRF_TRUSTED_ORIGINs = ['https://new-movie-production.up.railway.app/']
 
 # SECURE_SSL_REDIRECT = True
 # Application definition
@@ -48,9 +49,11 @@ INSTALLED_APPS = [
     'dashboard',
     'protontvapi',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     # 'tracking.middleware.VisitorTrackingMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
