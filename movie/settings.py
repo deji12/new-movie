@@ -85,23 +85,23 @@ WSGI_APPLICATION = 'movie.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd3r9utq682539j',
-        'USER': 'u35b7ann1etcvb',
-        'PASSWORD': 'pa11a8be0f7ea73b553c04fbe5d914e5aa7b8fa7ca894d9eb3be2b02609374bca',
-        'HOST': 'ec2-52-7-121-240.compute-1.amazonaws.com',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'd3r9utq682539j',
+#         'USER': 'u35b7ann1etcvb',
+#         'PASSWORD': 'pa11a8be0f7ea73b553c04fbe5d914e5aa7b8fa7ca894d9eb3be2b02609374bca',
+#         'HOST': 'ec2-52-7-121-240.compute-1.amazonaws.com',
+#         'PORT': '5432'
+#     }
+# }
 
 
 # Password validation
