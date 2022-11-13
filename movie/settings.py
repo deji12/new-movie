@@ -29,8 +29,8 @@ SECRET_KEY = 'django-insecure-2ns(12mi_0-i^lq8z9&*$u90lqt9#x6k*z(*o-kl*izfq7yl)y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://new-movie-production.up.railway.app/', '*']
-CSRF_TRUSTED_ORIGINS = ['https://new-movie-production.up.railway.app/']
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://new-movie-production.up.railway.app/', 'http://new-movie-production.up.railway.app/', 'https://new-movie-production.up.railway.app/admin/']
 
 # SECURE_SSL_REDIRECT = True
 # Application definition
