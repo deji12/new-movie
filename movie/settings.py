@@ -34,11 +34,13 @@ ALLOWED_HOSTS = ['*']
 CORS_ALLOWED_ORIGINS = [
    "https://new-movie-production.up.railway.app/",
    "https://new-movie-production.up.railway.app/admin/",
+   "https://new-movie-production.up.railway.app",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://new-movie-production.up.railway.app/",
-   "https://new-movie-production.up.railway.app/admin/",
+   "https://new-movie-production.up.railway.app/admin/", 
+   "https://new-movie-production.up.railway.app",
 ]
 
 CORS_ALLOW_METHODS = [
