@@ -32,12 +32,16 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 CORS_ALLOWED_ORIGINS = [
+   "https://protontv.cc/",
+   "https://protontv.cc",
    "https://new-movie-production.up.railway.app/",
    "https://new-movie-production.up.railway.app/admin/",
    "https://new-movie-production.up.railway.app",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
+   "https://protontv.cc/",
+   "https://protontv.cc",
     "https://new-movie-production.up.railway.app/",
    "https://new-movie-production.up.railway.app/admin/", 
    "https://new-movie-production.up.railway.app",
