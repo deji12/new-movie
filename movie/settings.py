@@ -188,9 +188,9 @@ EMAIL_HOST_USER = 'adesolaayodeji53@gmail.com'
 EMAIL_HOST_PASSWORD = 'xhtnvghrbhtatmmh'
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dxojb4izx',
-    'API_KEY': '143382612328164',
-    'API_SECRET': '4g0_YHC242Uy1LU69CtIlfxKH2s'
+    'CLOUD_NAME': 'the-proton-guy',
+    'API_KEY': '146619838248574',
+    'API_SECRET': 'lBzuGJ9iFwUXOFl-t_NL26AHDdI'
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
