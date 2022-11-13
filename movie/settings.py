@@ -30,8 +30,32 @@ SECRET_KEY = 'django-insecure-2ns(12mi_0-i^lq8z9&*$u90lqt9#x6k*z(*o-kl*izfq7yl)y
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://new-movie-production.up.railway.app/', 'http://new-movie-production.up.railway.app/', 'https://new-movie-production.up.railway.app/admin/']
 
+CORS_ALLOWED_ORIGINS = [
+   "https://new-movie-production.up.railway.app/",
+   "https://new-movie-production.up.railway.app/admin/",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://new-movie-production.up.railway.app/",
+   "https://new-movie-production.up.railway.app/admin/",
+]
+
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOW_CREDENTIALS = True
 # SECURE_SSL_REDIRECT = True
 # Application definition
 
