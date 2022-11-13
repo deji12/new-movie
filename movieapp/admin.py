@@ -1,84 +1,70 @@
 from django.contrib import admin
 from . import models
+from import_export.admin import ImportExportModelAdmin
 
-from import_export import resources
+class movieAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
 
-class MovieResource(resources.ModelResource):
+admin.site.register(models.movie, movieAdmin)
 
-    class Meta:
-        model = models.movie
-        
-class commentResource(resources.ModelResource):
+class CommentAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
 
-    class Meta:
-        model = models.comment
-        
-class ReviewsResource(resources.ModelResource):
+admin.site.register(models.comment, CommentAdmin)
 
-    class Meta:
-        model = models.reviewss
-        
-class CategoryResource(resources.ModelResource):
+class ReviewsAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
 
-    class Meta:
-        model = models.Category
-        
-class RateResource(resources.ModelResource):
+admin.site.register(models.reviewss, ReviewsAdmin)
 
-    class Meta:
-        model = models.rate
-        
-class YearResource(resources.ModelResource):
+class CategoryAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
 
-    class Meta:
-        model = models.year
-        
-class SeriesResource(resources.ModelResource):
+admin.site.register(models.Category, CategoryAdmin)
 
-    class Meta:
-        model = models.series
-        
-class EpisodeCommentResource(resources.ModelResource):
+class RateAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
 
-    class Meta:
-        model = models.episode_comment
-        
-class EpisodeReviewResource(resources.ModelResource):
+admin.site.register(models.rate, RateAdmin)
 
-    class Meta:
-        model = models.episode_review
-        
-class SeasonResource(resources.ModelResource):
+class YearAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
 
-    class Meta:
-        model = models.season
-        
-class EpisodeResource(resources.ModelResource):
+admin.site.register(models.year, YearAdmin)
 
-    class Meta:
-        model = models.episode
-        
-class PhotoResource(resources.ModelResource):
+class SeriesAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
 
-    class Meta:
-        model = models.photos
-        
-        
-class ProfileResource(resources.ModelResource):
+admin.site.register(models.series, SeriesAdmin)
 
-    class Meta:
-        model = models.Profile
-        
-admin.site.register(models.movie)
-admin.site.register(models.comment)
-admin.site.register(models.reviewss)
-admin.site.register(models.Category)
-admin.site.register(models.rate)
-admin.site.register(models.year)
-admin.site.register(models.series)
-admin.site.register(models.episode_comment)
-admin.site.register(models.episode_review)
-admin.site.register(models.season)
-admin.site.register(models.episode)
-admin.site.register(models.photos)
-admin.site.register(models.Profile)
+
+class EpisodeCommentAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
+
+admin.site.register(models.episode_comment, EpisodeCommentAdmin)
+
+class EpisodereviewAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
+
+admin.site.register(models.episode_review, EpisodereviewAdmin)
+
+class SeasonAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
+
+admin.site.register(models.season, SeasonAdmin)
+
+class EpisodeAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
+
+admin.site.register(models.episode, EpisodeAdmin)
+
+class PhotosAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
+
+admin.site.register(models.photos, PhotosAdmin)
+
+class ProfileAdmin(ImportExportModelAdmin, admin.ModelAdmin):
+        ...
+
+admin.site.register(models.Profile, ProfileAdmin)
+
