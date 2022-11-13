@@ -76,6 +76,7 @@ INSTALLED_APPS = [
     'protontvapi',
     'rest_framework',
     'corsheaders',
+   'import_export',
 ]
 
 MIDDLEWARE = [
